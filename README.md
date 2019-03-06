@@ -6,7 +6,7 @@ En este CRUD podrás añadir nuevos componentes a una base de datos, crear orden
 ## La página web
 
 La página está hecha con Bootstrap y css, y tiene un diseño propio. Está pensada para que pueda ser ampliada para continuar el proyecto.
-
+Está algo modificada ya que las imágenes en total pesaban demasiado y github tiene limite de subida.
 
 <img src="img/main.PNG">
 <img src="img/services.PNG">
