@@ -1,0 +1,471 @@
+body {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#database {
+    background-color: rgb(64, 64, 64);
+}
+
+#nav {
+    font-family: 'Staatliches', cursive;
+    background-color: white;
+    height: 3.5vw;
+}
+
+#header {
+    font-family: 'Staatliches', cursive;
+}
+
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 153, 153, 0.075);
+    color: white;
+}
+
+#placabase {
+    border-radius: 1em;
+}
+
+#procesador {
+    border-radius: 1em;
+}
+
+#ram {
+    border-radius: 1em;
+}
+
+#fuente {
+    border-radius: 1em;
+}
+
+#alm {
+    border-radius: 1em;
+}
+
+#procesador table {
+    color: white;
+}
+
+#placabase table {
+    color: white;
+}
+
+#ram table {
+    color: white;
+}
+
+#fuente table {
+    color: white;
+}
+
+#alm table {
+    color: white;
+}
+
+#gal {
+    height: 65em;
+    background-image: url("img/hd.jpg");
+    background-size: 1920px 1080px;
+}
+
+#contact {
+    text-align: center;
+    background-image: url("img/circuit.jpg");
+    background-repeat: no-repeat;
+    background-size: 800px 600px;
+    background-position: center;
+    height: 36em;
+}
+
+
+
+#carro {
+    height: 25em;
+    text-align: center;
+}
+
+/* Galeria de imágenes */
+
+#galeria {
+    padding-top: 3em;
+    text-align: center;
+    color: white;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #carro {
+        height: 55em;
+    }
+
+    #gal {
+        height: 140em;
+    }
+
+    #contact {
+        height: 78em;
+    }
+
+    #form {
+        padding-top: 5em;
+    }
+
+    .centered {
+        height: 9.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+.servicios {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.col-center {
+    margin: 0 auto;
+    float: none !important;
+}
+
+.carousel {
+    margin: 30px auto 60px;
+    padding: 0 80px;
+}
+
+.carousel .item {
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel .item h4 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.carousel .item img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.carousel .item .btn {
+    border-radius: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: #1a66ff;
+    padding: 6px 15px;
+    margin-top: 5px;
+}
+
+.carousel .item .btn:hover {
+    background: rgb(64, 64, 64);
+}
+
+.carousel .item .btn i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.carousel .thumb-wrapper {
+    margin: 5px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .thumb-content {
+    padding: 15px;
+    font-size: 13px;
+}
+
+.carousel .carousel-control {
+    height: 44px;
+    width: 44px;
+    background: none;
+    margin: auto 0;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.carousel .carousel-control i {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -19px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.carousel .carousel-control.left i {
+    margin-left: -3px;
+}
+
+.carousel .carousel-control.right i {
+    margin-right: -3px;
+}
+
+.carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 4px;
+    border-color: transparent;
+}
+
+.carousel-indicators li {
+    background: #ababab;
+}
+
+.carousel-indicators li.active {
+    background: #555;
+}
+
+
+.skill-card {
+
+    padding: 20px;
+    width: 15em;
+    background-color: #1a66ff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill-card:hover .skill-card__header {
+    height: 40px;
+}
+
+.skill-card:hover .skill-card__header .skill-card__icon {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
+    transform: translateX(-50%) translateY(-50%) scale(3);
+}
+
+.skill-card:hover .skill-card__body {
+    height: 170px;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+    transition-duration: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(1) {
+    transition-delay: 0.25s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(3) {
+    transition-delay: 0.75s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(4) {
+    transition-delay: 1s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(5) {
+    transition-delay: 1.25s;
+}
+
+.skill-card:hover .skill-card__body .skill-card__knowledge li:nth-child(6) {
+    transition-delay: 1.5s;
+}
+
+.skill-card .skill-card__header {
+    position: relative;
+    background-color: rgb(64, 64, 64);
+    height: 170px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.skill-card .skill-card__header .skill-card__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    width: 128px;
+    height: 128px;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.skill-card .skill-card__body {
+    height: 40px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+.skill-card .skill-card__body .skill-card__title {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-card .skill-card__body .skill-card__duration {
+    color: #9E9E9E;
+    font-style: italic;
+}
+
+.skill-card .skill-card__body .skill-card__knowledge {
+    margin-top: 10px;
+    color: #424242;
+}
+
+.skill-card .skill-card__body .skill-card__knowledge li {
+    margin-top: 5px;
+    transition-duration: 0;
+    transition-delay: 0.5s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+#myFooter {
+    background-color: rgb(64, 64, 64);
+    color: white;
+}
+
+#myFooter .footer-copyright {
+    background-color: #1a66ff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .myCols {
+    text-align: center;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #form {
+        margin-left: 4em;
+    }
+
+    #card1 {
+        margin-left: 2.5em;
+    }
+}
