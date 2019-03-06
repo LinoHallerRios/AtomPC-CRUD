@@ -29,10 +29,10 @@ sin redireccionarnos a otra página.
 
 El diseño de la página es provisional.
 
-<img style="margin: 0 auto" src="img/bd1.PNG" width="25%">
-<img style="margin: 0 auto" src="img/bd4.PNG" width="25%">
-<img style="margin: 0 auto" src="img/bd3.PNG" width="25%">
-<img style="margin: 0 auto" src="img/bd2.PNG" width="25%">
+<img style="margin: 0 auto" src="img/bd1.PNG" width="50%"> <img style="margin: 0 auto" src="img/bd4.PNG" width="50%">
+
+<img style="margin: 0 auto" src="img/bd3.PNG" width="50%"> <img style="margin: 0 auto" src="img/bd2.PNG" width="50%">
+
 
 
 ## Configurador de Ordenadores
