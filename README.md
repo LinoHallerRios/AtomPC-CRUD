@@ -8,7 +8,7 @@ En este CRUD podrás añadir nuevos componentes a una base de datos, crear orden
 La página está hecha con Bootstrap y css, y tiene un diseño propio. Está pensada para que pueda ser ampliada para continuar el proyecto.
 
 
-<img src="img/main.png">
+<img src="img/main.PNG">
 <img src="img/services.png">
 <img src="img/media.png">
 <img src="img/footer.png">
