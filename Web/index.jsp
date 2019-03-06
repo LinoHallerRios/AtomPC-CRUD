@@ -82,7 +82,7 @@
     </nav>
     <!--Header-->
     <div class="container-fluid" id="video">
-      <img class="img-fluid" src="css/img/pcexmp1.gif" width="100%" alt="pc">
+      <img class="img-fluid" src="css/img/pcexmp1.png" width="100%" alt="pc">
       <div class="centered">
         <p style="font-size: 5em">ATOM PC</p>
         <p>Configurador de ordenadores</p>
