@@ -31,7 +31,7 @@ El diseño de la página es provisional.
 
 <img src="img/bd1.PNG" width="48%"> <img src="img/bd4.PNG" width="48%">
 
-<img style="margin: 0 auto" src="img/bd3.PNG" width="50%"> <img style="margin: 0 auto" src="img/bd2.PNG" width="50%">
+<img style="margin: 0 auto" src="img/bd3.PNG" width="48%"> <img style="margin: 0 auto" src="img/bd2.PNG" width="48%">
 
 
 
