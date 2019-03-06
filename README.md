@@ -9,9 +9,9 @@ La página está hecha con Bootstrap y css, y tiene un diseño propio. Está pen
 
 
 <img src="img/main.PNG">
-<img src="img/services.png">
-<img src="img/media.png">
-<img src="img/footer.png">
+<img src="img/services.PNG">
+<img src="img/media.PNG">
+<img src="img/footer.PNG">
 
 ## Services
 
@@ -19,7 +19,7 @@ La página cuenta inicialmente con 3 servicios disponibles, el más importante e
 luego tenemos el configurador que nos da la oportunidad de crear configuraciones de ordenadores con los componentes, y por último la función de ver los ordenadores
 creados de manera muy simple en una tabla.
 
-<img src="img/services.png">
+<img src="img/services.PNG">
 
 ## Base de datos de componentes
 
@@ -29,10 +29,10 @@ sin redireccionarnos a otra página.
 
 El diseño de la página es provisional.
 
-<img style="margin: 0 auto" src="img/bd1.png" width="25%">
-<img style="margin: 0 auto" src="img/bd4.png" width="25%">
-<img style="margin: 0 auto" src="img/bd3.png" width="25%">
-<img style="margin: 0 auto" src="img/bd2.png" width="25%">
+<img style="margin: 0 auto" src="img/bd1.PNG" width="25%">
+<img style="margin: 0 auto" src="img/bd4.PNG" width="25%">
+<img style="margin: 0 auto" src="img/bd3.PNG" width="25%">
+<img style="margin: 0 auto" src="img/bd2.PNG" width="25%">
 
 
 ## Configurador de Ordenadores
@@ -40,11 +40,11 @@ El diseño de la página es provisional.
 Esta página nos permite guardar una configuración de un ordenador con los componentes que tenemos guardados.
 Nos dejará seleccionar un componente de una lista generada con los componentes que ya tenemos. El diseño de esta página también es provisional. 
 
-<img style="margin: auto" src="img/config.png">
+<img style="margin: auto" src="img/config.PNG">
 
 ## Lista de ordenadores
 
 Esta es la sección más basica y es solamente informátiva de momento, nos proporciona la tabla donde se guardan los ordenadores, ya creados.
 Pero aquí solo nos dejará borrarlos.
 
-<img src="img/list.png">
+<img src="img/list.PNG">
