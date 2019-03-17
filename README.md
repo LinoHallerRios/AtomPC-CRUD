@@ -53,4 +53,4 @@ Pero aquí solo nos dejará borrarlos.
 
 ## Enlace del vídeo
 
-https://drive.google.com/file/d/1uKefGzyCbCRHnXLC2YC2l2PMkXZT2PK5/view?usp=sharing
+(CRUD Atom PC)[https://drive.google.com/file/d/1uKefGzyCbCRHnXLC2YC2l2PMkXZT2PK5/view?usp=sharing]
