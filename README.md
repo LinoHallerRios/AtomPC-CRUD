@@ -51,6 +51,10 @@ Pero aquí solo nos dejará borrarlos.
 <img src="img/list.PNG">
 
 
-## Enlace del vídeo
+## Enlaces de los vídeos
 
 [CRUD Atom PC](https://drive.google.com/file/d/1uKefGzyCbCRHnXLC2YC2l2PMkXZT2PK5/view?usp=sharing)
+
+[CRUD Atom PC Login Upgrade](https://drive.google.com/file/d/1kBJtjvEDsJTfnN20yBK7J3WfFakHkQ7f/view?usp=sharing)
+
+

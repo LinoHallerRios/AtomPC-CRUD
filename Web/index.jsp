@@ -13,25 +13,32 @@
   <title>ATOM PC</title>
   <link rel="icon" href="css/img/atom.png" type="image/gif" sizes="16x16">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link href="css/frontpage.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-  <script src="js/myjs.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<%
+  session.setAttribute("loginErr", "false");
+  session.setAttribute("signupErr", "false");
+%>
 
 <body>
   <div class="container-fluid px-0" id="front">
@@ -68,21 +75,19 @@
                 <h2>Media</h2>
               </a>
             </li>
-
             <span style="font-size: 1.3vw; margin-top: 0.8vw; margin-left: 2vw;">
               <i class="fas fa-search"></i>
             </span>
             <span style="font-size: 1.3vw; margin-top: 0.8vw; margin-left: 0.6vw;">
-              <i class="fas fa-user "></i>
+              <a href="login.jsp" style="text-decoration: none; color: black;"><i class="fas fa-user "></i></a>
             </span>
-
           </ul>
         </div>
       </div>
     </nav>
     <!--Header-->
     <div class="container-fluid" id="video">
-      <img class="img-fluid" src="css/img/pcexmp1.png" width="100%" alt="pc">
+      <img class="img-fluid" src="css/img/pcexmp1.gif" width="100%" alt="pc">
       <div class="centered">
         <p style="font-size: 5em">ATOM PC</p>
         <p>Configurador de ordenadores</p>
@@ -153,8 +158,8 @@
                           <span style="font-size: 4em;"><i class="fas fa-address-card"></i></span>
                         </div>
                         <div class="thumb-content">
-                          <h4>Info</h4>
-                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                          <h4>Perfil</h4>
+                          <a href="perfil.jsp" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -165,7 +170,7 @@
                         </div>
                         <div class="thumb-content">
                           <h4>Contacto</h4>
-                          <a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+                          <a href="#contact" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -252,8 +257,8 @@
                           <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-user" style="color:#1a66ff"></i></div>
                           </div>
-                          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido"
-                            required>
+                          <input type="text" class="form-control" id="nombre" name="nombre"
+                            placeholder="Nombre y Apellido" required>
                         </div>
                       </div>
                       <div class="form-group">
@@ -261,8 +266,8 @@
                           <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fa fa-envelope" style="color:#1a66ff"></i></div>
                           </div>
-                          <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com"
-                            required>
+                          <input type="email" class="form-control" id="nombre" name="email"
+                            placeholder="ejemplo@gmail.com" required>
                         </div>
                       </div>
 
@@ -276,7 +281,8 @@
                       </div>
 
                       <div class="text-center">
-                        <input type="submit" value="Enviar" class="btn btn-block rounded-0 py-2" style="background-color: #1a66ff; color: white;">
+                        <input type="submit" value="Enviar" class="btn btn-block rounded-0 py-2"
+                          style="background-color: #1a66ff; color: white;">
                       </div>
                     </div>
 
