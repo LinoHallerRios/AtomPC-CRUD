@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-03-2019 a las 21:30:44
+-- Tiempo de generación: 07-05-2019 a las 20:56:29
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `atom`
 --
-CREATE DATABASE IF NOT EXISTS `atom` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
-USE `atom`;
 
 -- --------------------------------------------------------
 
@@ -141,7 +139,8 @@ CREATE TABLE `procesadores` (
 
 INSERT INTO `procesadores` (`CodPro`, `TipoPro`, `NomPro`, `NumCor`, `PrePro`) VALUES
 (1, 'Intel', 'i7-7700k', 6, 321.98),
-(2, 'AMD', 'Ryzen 7 7200', 12, 275.89);
+(2, 'AMD', 'Ryzen 7 7200', 12, 275.89),
+(3, 'Intel', 'test', 7, 1233);
 
 -- --------------------------------------------------------
 
@@ -165,8 +164,32 @@ CREATE TABLE `ram` (
 
 INSERT INTO `ram` (`CodRam`, `MarcRam`, `ModRam`, `TipoRam`, `CapRam`, `HerzRam`, `PreRam`) VALUES
 (1, 'G.Skill', 'Trident Z RGB', 'DDR4', 8, '3200', 125.3),
-(2, 'Corsair', 'Vengeance LPX', 'DDR4', 8, '2400', 0),
-(3, 'Kingston', 'HyperX Fury Blue', 'DDR3', 4, '1600', 26.75);
+(2, 'Corsair', 'Vengeance LPX', 'DDR4', 8, '2400', 125),
+(3, 'Kingston', 'HyperX Fury Blue', 'DDR3', 4, '1600', 26.75),
+(4, 'Kingston', 'HyperX Predator RGB', 'DDR4', 8, '2933', 80);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `codUsu` int(200) NOT NULL,
+  `NomUsu` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
+  `apeUsu` varchar(80) COLLATE utf8_spanish_ci NOT NULL,
+  `mailUsu` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `passUsu` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `imgUsu` varchar(2000) COLLATE utf8_spanish_ci NOT NULL DEFAULT 'http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`codUsu`, `NomUsu`, `apeUsu`, `mailUsu`, `passUsu`, `imgUsu`) VALUES
+(5, 'Lino', 'Haller Ríos', 'lino@gmail.com', '123456', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaLMnex1QwV83TBQgxLTaoDAQlFswsYy62L3mO4Su-CMkk3jX'),
+(6, 'Lino', 'Haller Ríos', 'lino20@gmail.com', '123456', 'https://d500.epimg.net/cincodias/imagenes/2016/07/04/lifestyle/1467646262_522853_1467646344_noticia_normal.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -219,6 +242,12 @@ ALTER TABLE `ram`
   ADD UNIQUE KEY `CodRam` (`CodRam`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`codUsu`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -256,7 +285,13 @@ ALTER TABLE `procesadores`
 -- AUTO_INCREMENT de la tabla `ram`
 --
 ALTER TABLE `ram`
-  MODIFY `CodRam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `CodRam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `codUsu` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Restricciones para tablas volcadas
